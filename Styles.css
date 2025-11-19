@@ -1,0 +1,17 @@
+div {
+  margin: 20px auto; 
+  padding: 15px;    
+
+  background-color: #f0f0f0; 
+  border: 1px solid red;    
+  border-radius: 8px;        
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+
+
+  width: 80%; 
+  max-width: 500px; 
+
+  font-family: sans-serif;
+  color: #333;
+  text-align: center;
+}
