@@ -4,11 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
+    <style>
+          body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .productos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .producto-tarjeta {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: white;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .producto-tarjeta:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto-imagen {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .producto-info {
+      padding: 15px;
+    }
+
+    .producto-nombre {
+      font-size: 1.1em;
+      margin: 0;
+    }
+
+    .producto-precio {
+      color: #e74c3c;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+  </style>
+    </style>
 </head>
 <body>
 
     <h1>Tienda de Tecnología</h1>
     <img src="https://www.muycanal.com/wp-content/uploads/2014/01/Tecnologia.jpg">
     <p>Esto es una tienda en la que vendemos todo tipo de productos tecnologicos.</p>
+   <h2>Productos Destacados</h2>
+
+  <div class="productos-container">
+    <!-- Producto 1 -->
+    <div class="producto-tarjeta">
+      <img src="https://thumb.pccomponentes.com/w-530-530/articles/1094/10948146/1708-pccom-imperial-amd-ryzen-7-9800x3d-32gb-2tb-ssd-rtx-5070-ti-windows-11-home-v2-comprar.jpg" alt="Producto 1" class="producto-imagen">
+      <div class="producto-info">
+        <h3 class="producto-nombre">PcCom Imperial AMD Ryzen 7 9800X3D / 32GB / 2TB SSD / RTX 5070 Ti + Windows 11 Home V2</h3>
+        <p class="producto-precio">2129€</p>
+         <button class="btn-agregar" onclick="agregarAlCarrito('Imperial AMD', 2129€)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto-tarjeta">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-pro-witb-cosmicorange-202509_FMT_WHH?wid=560&hei=744&fmt=jpeg&qlt=90&.v=NXh3OEZPWW1IYUpzT1hwc0dnVnRpNGpxQkRKUjFONlhiQkhUZXVydnkwSnRNV1RtaElLOWlibWpBaG1hcUZKYlZwRHBsN0J5WGltZHEvVEZYY0VZa3I2TGhYaGhMVkJpQ2RGWWVURTZNbXpJc0RDNGp0cUtNQmRxTjZCWlpwYmw" alt="Producto 2" class="producto-imagen">
+      <div class="producto-info">
+        <h3 class="producto-nombre">iphone 17  Pro Max</h3>
+        <p class="producto-precio">1999€</p>
+        <button class="btn-agregar" onclick="agregarAlCarrito('iphone 17  Pro Max', 1999€)">Agregar al carrito</button>
+      </div>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto-tarjeta">
+      <img src="https://thumb.pccomponentes.com/w-530-530/articles/1094/10940511/1683-portatil-lenovo-legion-pro-5i-16-intel-core-ultra-9-275hx-32gb-1tb-ssd-rtx-5070-ti-oled-240hz-negro-rgb-231954a3-61e8-4224-bff9-f84df8c9ff7d.jpg" alt="Producto 3" class="producto-imagen">
+      <div class="producto-info">
+        <h3 class="producto-nombre">Portátil Lenovo Legion Pro 5i 16" Intel Core Ultra 9 275HX 32GB 1TB SSD RTX 5070 Ti OLED 240Hz Negro</h3>
+        <p class="producto-precio">1979€</p>
+         <button class="btn-agregar" onclick="agregarAlCarrito('Portátil Lenovo Legion Pro', 1979€)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto-tarjeta">
+      <img src="https://www.apple.com/v/airpods/aa/images/overview/hero_endframe__calpooy4ucr6_large.jpg" alt="Producto 4" class="producto-imagen">
+      <div class="producto-info">
+        <h3 class="producto-nombre">Airpods</h3>
+        <p class="producto-precio">169€</p>
+        <button class="btn-agregar" onclick="agregarAlCarrito('Airpods', 169€)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="producto-tarjeta">
+      <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_149355015/fee_786_587_png" alt="Producto 5" class="producto-imagen">
+      <div class="producto-info">
+        <h3 class="producto-nombre">Samsumg galaxy s25 ultra </h3>
+        <p class="producto-precio">1199€</p>
+        <button class="btn-agregar" onclick="agregarAlCarrito('Samsumg galaxy s25 ultra', 1199€)">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+
+
+
 </body>
 </html>
